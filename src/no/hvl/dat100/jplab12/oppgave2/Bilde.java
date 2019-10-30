@@ -26,7 +26,8 @@ public class Bilde extends Tekst {
 
 	@Override
 	public String toString() {
-		throw new UnsupportedOperationException(TODO.method ());
+		String returid = "BILDE" + "\n" + id + "\n" + bruker + "\n" + dato + "\n" + likes + "\net bilde" + "\n" + url + "\n" ;
+		return returid;
 
 	}
 

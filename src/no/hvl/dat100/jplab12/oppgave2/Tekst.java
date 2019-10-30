@@ -28,7 +28,8 @@ public class Tekst extends Innlegg {
 
 	@Override
 	public String toString() {
-		throw new UnsupportedOperationException(TODO.method());
+		String returid = "TEKST" + "\n" + id + "\n" + bruker + "\n" + dato + "\n" + likes + "\n" + tekst + "\n" ;
+		return returid;
 
 	}
 	
