@@ -78,8 +78,8 @@ public abstract class Innlegg {
 	}
 
 	public int getLikes() {
-		//throw new UnsupportedOperationException(TODO.method());
-return likes;
+		// throw new UnsupportedOperationException(TODO.method());
+		return likes;
 
 // returnerer likes
 	}
@@ -87,24 +87,26 @@ return likes;
 	public void doLike() {
 		this.likes = likes++;
 		// inkrementerer likes med 1
-		//throw new UnsupportedOperationException(TODO.method());
+		// throw new UnsupportedOperationException(TODO.method());
 	}
 
 	public boolean erLik(Innlegg innlegg) {
-		return id==innlegg.id;
+		return id == innlegg.id;
 	}
 
 	@Override
 	public String toString() {
+		
+		
 
-		//throw new UnsupportedOperationException(TODO.method());
+		// throw new UnsupportedOperationException(TODO.method());
 
 	}
 
 	// Metoden nedenfor er kun for valgfri oppgave 6
 	public String toHTML() {
 
-		//throw new UnsupportedOperationException(TODO.method());
+		// throw new UnsupportedOperationException(TODO.method());
 
 	}
 }
