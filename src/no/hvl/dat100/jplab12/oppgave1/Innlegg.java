@@ -51,7 +51,7 @@ public abstract class Innlegg {
 	}
 
 	public void setBruker(String bruker) {
-		bruker = this.bruker;
+		this.bruker = bruker;
 
 		// setter bruker variabel
 
@@ -66,7 +66,7 @@ public abstract class Innlegg {
 
 	public void setDato(String dato) {
 		// throw new UnsupportedOperationException(TODO.method());
-		dato = this.dato;
+		this.dato = dato;
 		// setter dato
 	}
 
@@ -85,7 +85,7 @@ public abstract class Innlegg {
 	}
 
 	public void doLike() {
-		this.likes = likes++;
+		this.likes = this.likes+1;
 		// inkrementerer likes med 1
 		// throw new UnsupportedOperationException(TODO.method());
 	}
@@ -96,6 +96,14 @@ public abstract class Innlegg {
 
 	@Override
 	public String toString() {
+		
+		// "1\nOle Olsen\n23-10-2019\n7\n"
+		
+		String returid = id+ "\n" + bruker + "\n" + dato + "\n" + likes + "\n";
+		return returid;
+		
+		
+		
 		
 		
 
