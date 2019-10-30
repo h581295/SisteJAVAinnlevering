@@ -81,14 +81,13 @@ public class Blogg {
 	}
 
 	public String toString() {
-		//    2\nTEKST\n1\nOle Olsen\n23-10-2019\n0\nen tekst\nBILDE\n2\
-		//    nOline Olsen\n24-10-2019\n0\net bilde\nhttp://www.picture.com/oo.jpg\n
-			
-		String returString = "";
+		
+		String returString = "" + innleggtabell.length + "\n";
+		
 	
 		for(int i = 0; i < nesteledig; i++) {
 			
-			String a = toString();
+			returString += innleggtabell[i].toString();
 			
 		}
 			
