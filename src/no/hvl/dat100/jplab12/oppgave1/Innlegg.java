@@ -21,7 +21,7 @@ public abstract class Innlegg {
 		this.bruker = bruker;
 		this.dato = dato;
 
-		// Laget første konstruktør med 3 argument
+		// Laget fï¿½rste konstruktï¿½r med 3 argument
 
 		// TODO
 		// throw new UnsupportedOperationException(TODO.constructor("Innlegg"));
@@ -33,7 +33,7 @@ public abstract class Innlegg {
 		this.bruker = bruker;
 		this.dato = dato;
 		this.likes = likes;
-		// Laget andre konstruktør med 4 argument
+		// Laget andre konstruktï¿½r med 4 argument
 
 		// TODO - START
 
