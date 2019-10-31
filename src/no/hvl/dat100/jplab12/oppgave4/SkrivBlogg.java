@@ -12,23 +12,24 @@ public class SkrivBlogg {
 
 	public static boolean skriv(Blogg samling, String filnavn) {
 	
-		String skrivtilfil = filnavn;
-		String skriverier = samling.toString();
+	
+		
 		PrintWriter skriver;
+		
 		try {
 		
-			skriver = new PrintWriter(skrivtilfil);
+			skriver = new PrintWriter(filnavn);
 		} catch (FileNotFoundException e) {
-			
-			e.printStackTrace();
+		
 			return false;
 		}
-		for(int i = 0; i<samling.getAntall(); i++) {
-			
 		
+		
+		String tekst = samling.toString();
+		
+		skriver.println(tekst);
 			
-			
-		} 			skriver.println(skriverier);
+					
 		skriver.close();
 		return true;
 		
