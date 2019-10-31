@@ -34,6 +34,5 @@ public class SkrivBlogg {
 		return true;
 		
 
-
 	}
 }
