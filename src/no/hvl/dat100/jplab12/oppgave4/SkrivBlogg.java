@@ -33,8 +33,6 @@ public class SkrivBlogg {
 		skriver.close();
 		return true;
 		
-		
-		
 
 
 	}
