@@ -6,7 +6,7 @@ import java.io.PrintWriter;
 import no.hvl.dat100.jplab12.oppgave3.*;
 import no.hvl.dat100.jplab12.common.TODO;
 
-public class SkrivBlogg {
+public class SkrivBlogg{
 
 	private static String MAPPE = System.getProperty("user.dir") + "/src/no/hvl/dat100/jplab12/tests/";
 
@@ -18,16 +18,17 @@ public class SkrivBlogg {
 		
 		try {
 		
-			skriver = new PrintWriter(filnavn);
+			skriver = new PrintWriter(MAPPE+filnavn);
 		} catch (FileNotFoundException e) {
 		
 			return false;
 		}
 		
 		
+		
 		String tekst = samling.toString();
 		
-		skriver.println(tekst);
+		skriver.print(tekst);
 			
 					
 		skriver.close();
