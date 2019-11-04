@@ -82,7 +82,7 @@ public class Blogg {
 
 	public String toString() {
 		
-		String returString = "" + innleggtabell.length + "\n";
+		String returString = "" + nesteledig + "\n";
 		
 	
 		for(int i = 0; i < nesteledig; i++) {
